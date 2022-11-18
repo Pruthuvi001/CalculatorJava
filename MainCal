@@ -1,0 +1,26 @@
+package MyLabs;
+
+import java.util.*;
+
+public class MainCal {	
+	public static void main(String[] args) {
+		int num1,num2;
+	Scanner myscanner = new Scanner(System.in);
+	
+	System.out.print("Enter the first Number : ");
+	num1 = myscanner.nextInt();
+	
+	System.out.print("Enter the second Number : ");
+	num2 = myscanner.nextInt();
+	
+	System.out.print("Enter the operation : ");
+	String op = myscanner.next();
+		
+	Calculator obj = new Calculator();
+	
+	int temp;
+	temp = obj.operation(op, num1, num2);
+	
+	System.out.println("Result is : " + temp);
+	}
+}
