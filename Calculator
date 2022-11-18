@@ -1,0 +1,21 @@
+package MyLabs;
+
+public class Calculator {
+	public int operation (String op, int num1, int num2){
+		int result = 0;
+		if(op.equals("+")) {
+			result = num1+num2;
+		}
+		if(op.equals("-")) {
+			result = num1 - num2;
+		}
+		if(op.equals("*")) {
+			result = num1 * num2;
+		}
+		if(op.equals("/")){
+			result = num1 / num2;
+		}
+		return result;
+	}
+
+}
